@@ -7,6 +7,6 @@ import {
 // decorator get the current user interceptor found to use it
 export const CurrentUser = createParamDecorator((data: any, context: ExecutionContext) => {
     const request = context.switchToHttp().getRequest();
-    const user = request.CurrentUser
+    const user = request.currentUser
     return user
 })

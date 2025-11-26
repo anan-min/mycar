@@ -26,7 +26,7 @@ const cookieSession = require('cookie-session');
           synchronize: true,
           entities: [User, Report]
         }
-      }
+      } 
     })
     ,UsersModule, 
     ReportsModule, 

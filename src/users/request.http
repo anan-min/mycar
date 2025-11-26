@@ -3,7 +3,7 @@ POST http://localhost:3000/auth/signup
 Content-Type: application/json
 
 {
-    "email": "nut996anan@gmail.com",
+    "email": "nut444anan@gmail.com",
     "password": "Password" 
 }
 ### Sign in 
@@ -11,7 +11,7 @@ POST http://localhost:3000/auth/signin
 Content-Type: application/json
 
 {
-    "email": "nut996anan@gmail.com",
+    "email": "nut444anan@gmail.com",
     "password": "Password" 
 }
 ### sign out 
@@ -53,9 +53,20 @@ Content-Type: application/json
 { 
     "make": "toyota",
     "model": "camry",
-    "year": 2000,
-    "mileage": 100000,
+    "year": 1980,
+    "mileage": 50000,
     "lng": 0,
-    "lat": 0,
-    "price": 50000
+    "lat":0,
+    "price": 10000
 }
+
+### Approved report 
+PATCH http://localhost:3000/reports/1
+Content-Type: application/json
+
+{ 
+    "approved": true
+}
+
+### get expected price 
+GET http://localhost:3000/reports?make=toyota&model=camry&lng=0&lat=0&mileage=50000&year=1980
