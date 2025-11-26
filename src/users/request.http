@@ -1,0 +1,46 @@
+### Create a New User
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "email": "nut991anan@gmail.com",
+    "password": "Password" 
+}
+### Sign in 
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "nut995anan@gmail.com",
+    "password": "Password" 
+}
+### sign out 
+POST http://localhost:3000/auth/signout
+
+### who am i
+GET http://localhost:3000/auth/whoami
+
+### hello
+GET http://localhost:3000/
+### find user with given id 
+GET http://localhost:3000/auth/8
+### find user with email. 
+GET http://localhost:3000/auth/?email=nut999anan@gmail.com
+### update user 
+PATCH http://localhost:3000/auth/6
+Content-Type: application/json
+
+{
+    "email": "nut999anan@gmail.com",
+    "password": "newPassword" 
+}
+### Delete user 
+DELETE http://localhost:3000/auth/8
+
+
+
+### Set color 
+POST http://localhost:3000/auth/colors/red
+
+### Get color `
+GET http://localhost:3000/auth/colors
