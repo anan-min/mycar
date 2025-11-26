@@ -11,7 +11,7 @@ POST http://localhost:3000/auth/signin
 Content-Type: application/json
 
 {
-    "email": "nut999anan@gmail.com",
+    "email": "nut996anan@gmail.com",
     "password": "Password" 
 }
 ### sign out 
@@ -44,3 +44,18 @@ POST http://localhost:3000/auth/colors/red
 
 ### Get color `
 GET http://localhost:3000/auth/colors
+
+
+### Create report
+POST http://localhost:3000/reports
+Content-Type: application/json
+
+{ 
+    "make": "toyota",
+    "model": "camry",
+    "year": 2000,
+    "mileage": 100000,
+    "lng": 0,
+    "lat": 0,
+    "price": 50000
+}
